@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mIBI Calculator</title>
+  </head>
+  
+  <body>
+    <h1>mIBI Calculator</h1>
+    <div class = "column">
+      <h2>Instructions</h2>
+      <p>
+      Download an .xlsx file from AWQMS with the site data for which you wish to calculate the mIBI values. Upload the document in this app using the "Upload..." button. The download button will remain deactivated until a file is uploaded.
+      </p>
+  
+      <p>
+      Once the file has been successfully uploaded, the download button will be activated. Clicking the download button will prompt the mIBI calcultor to run. After a few seconds, an .xlsx file will be ready with the mIBI scores contained within. Feel free to name the file whatever you like and save it to the destination of your choosing.
+      </p>
+
+      <p>Congratulations! You now have mIBI scores.</p>
+    </div>
+    
+    <div class = "row">
+      <div class = "column">
+        <h2>Calculator</h2>
+        {{  fileInput("upload", NULL, accept = ".xlsx", buttonLabel = "Upload...")  }}
+      </div>
+      <div class = "column">
+        {{  disabled(downloadButton("mIBI_scores_file", "Download .xlsx"))  }}
+      </div>
+      <div class = "column", id = "warning">
+        {{  tableOutput("file_type_warning")  }}
+      </div>
+    </div>
+
+</body>
+</html>

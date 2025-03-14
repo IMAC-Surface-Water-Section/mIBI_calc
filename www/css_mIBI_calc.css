@@ -1,0 +1,34 @@
+body, .btn {
+  background-color: #36454F;
+  color: #E5E4E2;
+}
+
+.shiny-output-error-validation {
+  color: #FF5733;
+}
+
+title, div#instructions {
+  max-width: 750px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.row{
+  margin-left: 0px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+.column {
+  width: 100%;
+  }
+}
