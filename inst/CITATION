@@ -1,0 +1,11 @@
+citHeader("To cite in publications, please use:")
+
+bibentry(bibtype = "Manual",
+ author = c(
+    person("Hillary", "Marler", role = c("aut", "cre")),
+    person("Yaal", "Dryer", role = c("aut"))
+  title = Illinois EPA mIBI Calculator",
+  institution = "Illinois Environmental Protection Agency",
+  year = 2025,
+  url = "https://github.com/IMAC-Surface-Water-Section/mIBI_calc",
+  textVersion = "Marler, H., Dryer, Y., 2025, Illinois EPA mIBI calculator, https://github.com/IMAC-Surface-Water-Section/mIBI_calc")
