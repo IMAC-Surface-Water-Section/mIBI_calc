@@ -83,7 +83,3 @@ filter_hierarchy <- function(df, group_col, hierarchy_cols, count_col = "count",
     }
   }, by = group_col]
 }
-
-append_to_base <- function(x){
-  append(c("monitoring_location_id", "activity_start_date", "activity_start_time"), x)
-}
